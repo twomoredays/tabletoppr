@@ -1,0 +1,26 @@
+//Basic format for our gameNight object
+//THIS CONTAINS PLACEHOLDER DATA
+var gameNight = {
+    gameNightID : 1,
+    gameDate: 1/24/2016,
+    gameTimeStart: "6:30 PM CST",
+    gameLoc: {
+        street: "1111 Main Street",
+        apt: "",
+        city: "AnyTown",
+        state: "MO",
+        zipcode: 12345
+    },
+    game: {
+        id: 31260,
+        name: "Agricola",
+        pic: "agricola.jpg",
+        playersMin: 1,
+        playersMax: 5,
+        playtime: "30 - 150 minutes"
+    },
+    gameHost: "Jim",
+    playersDesiredMin: 2,
+    playersDesiredMax: 4,
+    playersJoined: ["Bob", "Jenny"]
+}
