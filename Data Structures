@@ -20,6 +20,7 @@ var gameNight = {
         playtime: "30 - 150 minutes"
     },
     gameHost: "Jim",
-    playersDesired: 4,
+    playersDesiredMin: 2,
+    playersDesiredMax: 4,
     playersJoined: ["Bob", "Jenny"]
 }
