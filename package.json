@@ -1,0 +1,24 @@
+{
+  "name": "tabletoppr",
+  "version": "1.0.0",
+  "description": "A little web app to help you organize your next game night.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twomoredays/tabletoppr.git"
+  },
+  "author": "Kim Still",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twomoredays/tabletoppr/issues"
+  },
+  "homepage": "https://github.com/twomoredays/tabletoppr#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-react": "^3.1.0"
+  }
+}
