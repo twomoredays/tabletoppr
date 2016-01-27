@@ -6,15 +6,21 @@ const TARGET = process.env.npm_lifecycle_event;
 
 const PATHS = {
   app: path.join(__dirname, 'app'),
-  build: path.join(__dirname, 'build'),
+  build: path.join(__dirname, 'build')
 };
 
 const common = {
   // Entry accepts a path or an object of entries.
   entry: PATHS.app,
+  // Add resolve.extensions
+  // '' is needed to allow imports without extension
+  // . needed before extensions or match will fail
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   output: {
     path: PATHS.build,
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
 
   module: {
@@ -22,8 +28,8 @@ const common = {
       {
         test: /\.jsx?$/,
         loaders: ['eslint'],
-        include: PATHS.app,
-      },
+        include: PATHS.app
+      }
     ],
 
     loaders: [
@@ -32,10 +38,15 @@ const common = {
         test: /\.css$/,
         loaders: ['style', 'css'],
         // Include accepts eith a path or an array of paths.
-        include: PATHS.app,
+        include: PATHS.app
       },
-    ],
-  },
+      {
+        test: /\.jsx?$/,
+        loaders: ['babel?cacheDirectory'],
+        include: PATHS.app
+      }
+    ]
+  }
 };
 
 // Default configuration
@@ -57,11 +68,11 @@ if (TARGET === 'start' || !TARGET) {
 
       // Parse host and port from env for customization
       host: process.env.HOST,
-      port: process.env.PORT,
+      port: process.env.PORT
     },
     plugins: [
-      new webpack.HotModuleReplacementPlugin(),
-    ],
+      new webpack.HotModuleReplacementPlugin()
+    ]
   });
 }
 
