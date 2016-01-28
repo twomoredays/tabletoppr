@@ -6,6 +6,7 @@ var gameNight = {
     date: 1/24/2016,
     startTime: "6:30 PM CST",
     location: {
+        name: '',
         street: "1111 Main Street",
         apt: "",
         city: "AnyTown",
@@ -16,7 +17,7 @@ var gameNight = {
         // Can be an array of games to be played?
         id: 31260,
         name: "Agricola",
-        pic: "agricola.jpg",
+        thumbnail: "agricola.jpg",
         playersMin: 1,
         playersMax: 5,
         playtime: "30 - 150 minutes"
