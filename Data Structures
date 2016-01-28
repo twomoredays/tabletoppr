@@ -2,6 +2,7 @@
 //THIS CONTAINS PLACEHOLDER DATA
 var gameNight = {
     gameNightID : 1,
+    gameNightTitle: '',
     gameDate: 1/24/2016,
     gameTimeStart: "6:30 PM CST",
     gameLoc: {
