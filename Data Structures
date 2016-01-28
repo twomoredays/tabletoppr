@@ -1,11 +1,11 @@
-//Basic format for our gameNight object
-//THIS CONTAINS PLACEHOLDER DATA
+// Basic format for our gameNight object
+// THIS CONTAINS PLACEHOLDER DATA
 var gameNight = {
-    gameNightID : 1,
-    gameNightTitle: '',
-    gameDate: 1/24/2016,
-    gameTimeStart: "6:30 PM CST",
-    gameLoc: {
+    id : 1,
+    title: '',
+    date: 1/24/2016,
+    startTime: "6:30 PM CST",
+    location: {
         street: "1111 Main Street",
         apt: "",
         city: "AnyTown",
@@ -13,6 +13,7 @@ var gameNight = {
         zipcode: 12345
     },
     game: {
+        // Can be an array of games to be played?
         id: 31260,
         name: "Agricola",
         pic: "agricola.jpg",
